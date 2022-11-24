@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import { Container } from "./styles";
 import Button from "../../UI/button";
 import bigDots from "../../../assets/sections/reliance/big-dots.svg";
-import profileImg from "../../../assets/sections/reliance/profile.svg";
+import profileImg from "../../../assets/sections/reliance/profile.png";
 import illustration from "../../../assets/sections/reliance/illustration-section-2.png";
 import curlyLines from "../../../assets/sections/reliance/curly-lines.svg";
 

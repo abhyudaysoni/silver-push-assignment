@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import brushStroke from "../../../assets/sections/reliance/brush-stroke.png";
+import brushStroke from "../../../assets/general/brush-stroke.png";
 import blob from "../../../assets/sections/reliance/blob.png";
 
 export const Container = styled.section`

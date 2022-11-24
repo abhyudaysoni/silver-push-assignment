@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import illustrationBg from "../../assets/footer/illustration-bg.svg";
+import brushStroke from "../../assets/general/brush-stroke.png";
 import footerBg1 from "../../assets/footer/footer-bg1.png";
 
 export const Container = styled.footer`
@@ -42,7 +42,7 @@ export const Container = styled.footer`
       flex-wrap: wrap;
       padding: 2rem;
       width: 700px;
-      background-image: url(${illustrationBg});
+      background-image: url(${brushStroke});
       background-repeat: no-repeat;
       background-size: contain;
     }
