@@ -6,6 +6,7 @@ export const Container = styled.section`
   width: 100%;
   margin: 2rem 0;
   padding: 0 5rem;
+  z-index: 0;
   .section-1 {
     color: white;
     display: grid;
@@ -44,6 +45,7 @@ export const Container = styled.section`
   .section-2 {
     display: flex;
     justify-content: space-between;
+    margin: 2rem 0;
     padding: 0 2rem;
     .profiles {
       display: flex;

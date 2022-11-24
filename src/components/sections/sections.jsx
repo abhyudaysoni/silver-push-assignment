@@ -3,6 +3,7 @@ import { Container } from "./styles";
 import Intro from "./intro/intro";
 import Interests from "./interests/interests";
 import Reliance from "./reliance/reliance";
+import Earning from "./earning/earning";
 
 const Sections = () => {
   return (
@@ -10,6 +11,7 @@ const Sections = () => {
       <Intro />
       <Interests />
       <Reliance />
+      <Earning />
     </Container>
   );
 };

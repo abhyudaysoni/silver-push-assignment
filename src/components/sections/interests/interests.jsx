@@ -24,7 +24,7 @@ const Interests = () => {
               </div>
             </Button>
             <img
-              src={`interest/${interest.img}.svg`}
+              src={`assets/interest/${interest.img}.svg`}
               className="interest-image"
               alt={interest.img}
             />

@@ -1,4 +1,5 @@
 import React from "react";
+import ReactDOM from "react-dom";
 import { Container } from "./styles";
 import Button from "../../UI/button";
 import window from "../../../assets/header/window.svg";
@@ -18,14 +19,26 @@ const Intro = () => {
           <Button>Book a Free Consultation</Button>
         </div>
         <div className="illustration">
-          <img src={window} id="window" alt="window" />
-          <img src={graph} id="graph" alt="graph" />
+          {ReactDOM.createPortal(
+            <img src={window} id="window" alt="window" />,
+            document.getElementById("backgrounds-root")
+          )}
+          {ReactDOM.createPortal(
+            <img src={graph} id="graph" alt="graph" />,
+            document.getElementById("backgrounds-root")
+          )}
         </div>
       </div>
       <div className="section-2">
         <div className="illustration">
-          <img src={dots} id="window" alt="window" />
-          <img src={box} id="graph" alt="graph" />
+          {ReactDOM.createPortal(
+            <img src={dots} id="header-dots" alt="dots" />,
+            document.getElementById("backgrounds-root")
+          )}
+          {ReactDOM.createPortal(
+            <img src={box} id="header-box" alt="box" />,
+            document.getElementById("backgrounds-root")
+          )}
         </div>
         <div className="profiles">
           <div className="profile-bg-1 profile-container">

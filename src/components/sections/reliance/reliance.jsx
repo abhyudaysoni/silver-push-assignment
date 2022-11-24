@@ -1,6 +1,9 @@
 import React from "react";
 import { Container } from "./styles";
 import Button from "../../UI/button";
+import bigDots from "../../../assets/sections/reliance/big-dots.svg";
+import profileImg from "../../../assets/sections/reliance/profile.svg";
+import illustration from "../../../assets/sections/reliance/illustration-section-2.png";
 
 const Reliance = () => {
   return (
@@ -12,14 +15,24 @@ const Reliance = () => {
           family with ease.
         </p>
         <Button>See How</Button>
-        <div>
-          <img src="" alt="" />
-          <img src="" alt="" />
-          <h3>Rahul Mahajan</h3>
-          <p>Banker, Earns upto 25K monthly reselling products</p>
+        <div className="profile">
+          <img src={bigDots} id="big-dots" alt="big-dots" />
+          <img src={profileImg} id="profile-img" alt="profile-img" />
+          <div className="profile-details">
+            <h3>Rahul Mahajan</h3>
+            <p>Banker, Earns upto 25K monthly reselling products</p>
+          </div>
         </div>
       </div>
-      <div className="section-2"></div>
+      <div className="section-2">
+        <div className="illustration-container">
+          <img
+            src={illustration}
+            id="illustration-section-2"
+            alt="illustration"
+          />
+        </div>
+      </div>
     </Container>
   );
 };
