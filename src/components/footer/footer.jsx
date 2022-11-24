@@ -8,7 +8,7 @@ import illustration3 from "../../assets/footer/illustration-3.png";
 import goToTop from "../../assets/footer/go-to-top.png";
 import lines from "../../assets/general/lines.svg";
 
-const Footer = () => {
+const Footer = ({ onBook }) => {
   return (
     <Container>
       <div className="footer-description">
@@ -23,7 +23,7 @@ const Footer = () => {
             Talk to our experts and start chasing your dream by booking a free
             consultation
           </p>
-          <Button>Book A free Consultaion</Button>
+          <Button onClick={onBook}>Book A free Consultaion</Button>
         </div>
       </div>
       <div className="footer-footnotes">

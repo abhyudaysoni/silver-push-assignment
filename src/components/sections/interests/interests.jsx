@@ -8,7 +8,7 @@ import arrowRed from "../../../assets/sections/arrow-red.svg";
 import circles from "../../../assets/general/circles.svg";
 import lines from "../../../assets/general/lines.svg";
 
-const Interests = () => {
+const Interests = ({ onBook }) => {
   return (
     <Container>
       <h1>Find What Matches Your Interests</h1>
@@ -21,7 +21,7 @@ const Interests = () => {
           <InterestCard className="interest-card" key={index}>
             <h2>{interest.title}</h2>
             <p>{interest.desc}</p>
-            <Button>
+            <Button onClick={onBook}>
               <div id="btn-content">
                 <p>Book Now</p>
                 <img src={arrowRed} alt="" />

@@ -9,14 +9,14 @@ import box from "../../../assets/general/box-solid.svg";
 import person1 from "../../../assets/sections/intro/person-1.png";
 import person2 from "../../../assets/sections/intro/person-2.png";
 
-const Intro = () => {
+const Intro = ({ onBook }) => {
   return (
     <Container>
       <div className="section-1">
         <div className="description">
           <h1>Online Training to Help You Start Earning</h1>
           <p>Online training to boost your earning</p>
-          <Button>Book a Free Consultation</Button>
+          <Button onClick={onBook}>Book a Free Consultation</Button>
         </div>
         <div className="illustration">
           <img src={window} id="window" alt="window" />

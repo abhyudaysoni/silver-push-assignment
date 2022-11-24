@@ -5,11 +5,11 @@ import Interests from "./interests/interests";
 import Reliance from "./reliance/reliance";
 import Earning from "./earning/earning";
 
-const Sections = () => {
+const Sections = ({ onBook }) => {
   return (
     <Container>
-      <Intro />
-      <Interests />
+      <Intro onBook={onBook} />
+      <Interests onBook={onBook} />
       <Reliance />
       <Earning />
     </Container>
