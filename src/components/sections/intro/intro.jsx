@@ -2,12 +2,12 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { Container } from "./styles";
 import Button from "../../UI/button";
-import window from "../../../assets/header/window.svg";
-import graph from "../../../assets/header/graph.svg";
+import window from "../../../assets/header/window.png";
+import graph from "../../../assets/header/graph.png";
 import dots from "../../../assets/general/dots.svg";
 import box from "../../../assets/general/box-solid.svg";
-import person1 from "../../../assets/header/person-1.svg";
-import person2 from "../../../assets/header/person-2.svg";
+import person1 from "../../../assets/sections/intro/person-1.png";
+import person2 from "../../../assets/sections/intro/person-2.png";
 
 const Intro = () => {
   return (
@@ -19,14 +19,8 @@ const Intro = () => {
           <Button>Book a Free Consultation</Button>
         </div>
         <div className="illustration">
-          {ReactDOM.createPortal(
-            <img src={window} id="window" alt="window" />,
-            document.getElementById("backgrounds-root")
-          )}
-          {ReactDOM.createPortal(
-            <img src={graph} id="graph" alt="graph" />,
-            document.getElementById("backgrounds-root")
-          )}
+          <img src={window} id="window" alt="window" />
+          <img src={graph} id="graph" alt="graph" />
         </div>
       </div>
       <div className="section-2">

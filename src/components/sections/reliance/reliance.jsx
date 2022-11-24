@@ -1,15 +1,22 @@
 import React from "react";
+import ReactDOM from "react-dom";
 import { Container } from "./styles";
 import Button from "../../UI/button";
 import bigDots from "../../../assets/sections/reliance/big-dots.svg";
 import profileImg from "../../../assets/sections/reliance/profile.svg";
 import illustration from "../../../assets/sections/reliance/illustration-section-2.png";
+import curlyLines from "../../../assets/sections/reliance/curly-lines.svg";
 
 const Reliance = () => {
   return (
     <Container>
+      {ReactDOM.createPortal(
+        <img id="curly-lines" src={curlyLines} alt="curly-lines" />,
+        document.getElementById("illustrations-root")
+      )}
       <div className="section-1">
         <h1>Become Self Reliant</h1>
+
         <p>
           Start your own business or service and add an extra income to your
           family with ease.

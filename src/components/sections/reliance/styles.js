@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import brushStroke from "../../../assets/sections/reliance/brush-stroke.svg";
-import blob from "../../../assets/sections/reliance/blob.svg";
+import brushStroke from "../../../assets/sections/reliance/brush-stroke.png";
+import blob from "../../../assets/sections/reliance/blob.png";
 
 export const Container = styled.section`
   margin: 10rem 0;
@@ -16,6 +16,7 @@ export const Container = styled.section`
     justify-content: space-evenly;
     margin: auto;
     height: 400px;
+    z-index: 10;
     button {
       background: #f26b5b;
       border-radius: 5px;

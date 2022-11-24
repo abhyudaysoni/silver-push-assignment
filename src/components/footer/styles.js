@@ -1,7 +1,13 @@
 import styled from "styled-components";
 import illustrationBg from "../../assets/footer/illustration-bg.svg";
+import footerBg1 from "../../assets/footer/footer-bg1.png";
 
 export const Container = styled.footer`
+  background-image: url(${footerBg1});
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 1440px 400px;
+  height: 800px;
   .footer-description {
     padding: 3rem 5rem;
     display: grid;
@@ -42,6 +48,22 @@ export const Container = styled.footer`
     }
   }
   .footer-footnotes {
+    text-align: center;
+    width: 300px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    justify-content: space-between;
+    .utils {
+      display: flex;
+      justify-content: space-between;
+      p {
+        cursor: pointer;
+      }
+    }
+    .copyrights {
+    }
     img {
       width: 100%;
       position: absolute;

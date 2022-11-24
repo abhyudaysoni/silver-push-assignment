@@ -5,6 +5,7 @@ export const Container = styled.section`
   flex-direction: column;
   margin: 10rem 0;
   padding: 0 5rem;
+  height: 600px;
   #dots {
     height: 200px;
   }
@@ -18,7 +19,7 @@ export const Container = styled.section`
   }
   .earning-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 2fr;
     .earning-step {
       margin: 3rem 0;
       cursor: pointer;
@@ -31,7 +32,7 @@ export const Container = styled.section`
       align-items: center;
       justify-content: center;
       img {
-        width: 500px;
+        width: 700px;
       }
     }
   }

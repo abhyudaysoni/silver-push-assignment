@@ -4,7 +4,7 @@ export const Container = styled.section`
   display: flex;
   flex-direction: column;
   width: 100%;
-  margin: 2rem 0;
+  margin: 2rem 0 0 0;
   padding: 0 5rem;
   z-index: 0;
   .section-1 {
@@ -40,14 +40,25 @@ export const Container = styled.section`
     }
     .illustration {
       display: flex;
+      #window {
+        position: relative;
+        height: 400px;
+        right: -150px;
+      }
+      #graph {
+        align-self: flex-end;
+        position: relative;
+        height: 200px;
+      }
     }
   }
   .section-2 {
     display: flex;
     justify-content: space-between;
-    margin: 2rem 0;
     padding: 0 2rem;
     .profiles {
+      position: relative;
+      top: -150px;
       display: flex;
       align-items: flex-end;
       .profile-container {

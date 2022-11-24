@@ -15,25 +15,83 @@ button {
   height: 700px;
   position: absolute;
   top: -100px;
-  z-index: -10;
-}
-#window {
-  position: absolute;
-  top: 100px;
-  right: 50px;
-  z-index: -9;
-  height: 500px;
-}
-#graph {
-  position: absolute;
-  top: 350px;
-  right: 0;
-  z-index: -9;
-  height: 250px;
+  z-index: -100;
 }
 
+#circles {
+  position: absolute;
+  top: 750px;
+  left: -150px;
+  width: 300px;
+  z-index: -100;
+}
+#lines {
+  position: absolute;
+  top: 1300px;
+  right: 0;
+  z-index: -100;
+  transform: rotate(90deg);
+}
+#curly-lines {
+  position: absolute;
+  top: 1700px;
+  left: 0;
+  width: 300px;
+  z-index: 0;
+}
 #header-dots {
-  position: absoluter;
+  position: absolute;
+  top: 450px;
+  left: 100px;
+  z-index: -10;
+}
+#header-box {
+  position: absolute;
+  top: 475px;
+  left: 200px;
+  z-index: -10;
+}
+#earning-dots {
+  position: absolute;
+  top: 2500px;
+  left: -100px;
+  width: 300px;
+  z-index: 0;
+}
+#earning-box-solid {
+  position: absolute;
+  top: 2900px;
+  width: 400px;
+  right: -70px;
+  z-index: -100;
+  transform: rotate(-70deg);
+}
+#footer-bg-1 {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  z-index: -100;
+}
+#footer-lines-1 {
+  position: absolute;
+  top: 3500px;
+  width: 400px;
+  right: -70px;
+  z-index: -100;
+}
+#footer-lines-2 {
+  position: absolute;
+  top: 3700px;
+  width: 400px;
+  right: -70px;
+  z-index: -100;
+}
+#go-to-top {
+  cursor: pointer;
+  position: absolute;
+  z-index: 100;
+  top: 4000px;
+  right: 100px;
 }
 
 p {

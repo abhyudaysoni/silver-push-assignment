@@ -3,12 +3,7 @@ import styled from "styled-components";
 export const Container = styled.section`
   display: flex;
   flex-direction: column;
-  margin: 10rem 0;
   padding: 0 5rem;
-  #circles {
-    top: 0;
-    width: 300px;
-  }
   #lines {
     width: 200px;
     align-self: end;
@@ -28,6 +23,7 @@ export const Container = styled.section`
     justify-content: space-between;
     margin: 2rem 0;
     .interest-card {
+      background-color: white;
       height: 400px;
       width: 300px;
       display: flex;

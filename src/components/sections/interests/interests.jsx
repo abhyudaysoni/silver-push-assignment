@@ -1,4 +1,5 @@
 import React from "react";
+import ReactDOM from "react-dom";
 import InterestCard from "../../UI/interest-card";
 import { Container } from "./styles";
 import Button from "../../UI/button";
@@ -11,7 +12,10 @@ const Interests = () => {
   return (
     <Container>
       <h1>Find What Matches Your Interests</h1>
-      <img id="circles" src={circles} alt="circles" />
+      {ReactDOM.createPortal(
+        <img id="circles" src={circles} alt="circles" />,
+        document.getElementById("illustrations-root")
+      )}
       <div className="interest-cards">
         {interests.map((interest, index) => (
           <InterestCard className="interest-card" key={index}>
@@ -32,7 +36,11 @@ const Interests = () => {
         ))}
       </div>
       <h2 id="more">More Coming soon</h2>
-      <img id="lines" src={lines} alt="lines" />
+
+      {ReactDOM.createPortal(
+        <img id="lines" src={lines} alt="lines" />,
+        document.getElementById("illustrations-root")
+      )}
     </Container>
   );
 };
